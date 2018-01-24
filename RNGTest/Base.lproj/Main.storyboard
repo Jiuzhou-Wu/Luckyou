@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RNGTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VD3-Gs-LyX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zte-9y-awf">
+                                <rect key="frame" x="0.0" y="567" width="187.5" height="67"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="27"/>
+                                <state key="normal" title="一抽" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="oneRoundPick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggr-dJ-o6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOr-w7-GiA">
+                                <rect key="frame" x="187.5" y="567" width="187.5" height="67"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="27"/>
+                                <state key="normal" title="十连抽" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tenRoundsPick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgh-IJ-lm6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-back" translatesAutoresizingMaskIntoConstraints="NO" id="0PP-8F-5wi">
+                                <rect key="frame" x="68" y="38.5" width="239" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0PP-8F-5wi" secondAttribute="height" multiplier="248:520" id="xtn-K9-eJa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VD3-Gs-LyX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Mg-8n-OTq"/>
+                            <constraint firstItem="Zte-9y-awf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.95" id="64I-J9-LCn"/>
+                            <constraint firstItem="pOr-w7-GiA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="9IU-sy-YXy"/>
+                            <constraint firstItem="0PP-8F-5wi" firstAttribute="centerX" secondItem="VD3-Gs-LyX" secondAttribute="centerX" id="E4g-ka-Xqh"/>
+                            <constraint firstItem="pOr-w7-GiA" firstAttribute="leading" secondItem="Zte-9y-awf" secondAttribute="trailing" id="KRf-Rd-62I"/>
+                            <constraint firstItem="pOr-w7-GiA" firstAttribute="width" secondItem="Zte-9y-awf" secondAttribute="width" id="LS2-4W-AQo"/>
+                            <constraint firstItem="VD3-Gs-LyX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Mzg-vq-Is5"/>
+                            <constraint firstItem="VD3-Gs-LyX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="d6T-fu-0VU"/>
+                            <constraint firstItem="0PP-8F-5wi" firstAttribute="height" secondItem="VD3-Gs-LyX" secondAttribute="height" multiplier="0.75" id="flI-L0-487"/>
+                            <constraint firstItem="VD3-Gs-LyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hBV-Wd-QhK"/>
+                            <constraint firstItem="0PP-8F-5wi" firstAttribute="bottom" secondItem="Zte-9y-awf" secondAttribute="top" multiplier="0.95" id="lZa-L2-rSx"/>
+                            <constraint firstItem="pOr-w7-GiA" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.95" id="sEQ-hz-njM"/>
+                            <constraint firstItem="Zte-9y-awf" firstAttribute="height" secondItem="pOr-w7-GiA" secondAttribute="height" id="tB1-6B-hVk"/>
+                            <constraint firstItem="pOr-w7-GiA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="vEM-EB-CpE"/>
+                            <constraint firstItem="Zte-9y-awf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wM1-ZY-F6N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="card" destination="0PP-8F-5wi" id="zzc-29-d0j"/>
+                        <outlet property="onePick" destination="Zte-9y-awf" id="GM2-7M-S24"/>
+                        <outlet property="tenPick" destination="pOr-w7-GiA" id="F6M-tj-zcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1037" height="1600"/>
+        <image name="button" width="1920" height="1080"/>
+        <image name="card-back" width="248" height="520"/>
+    </resources>
+</document>
