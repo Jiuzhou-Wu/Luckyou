@@ -13,6 +13,9 @@
 		B3BB2A1D200FF3AC00556F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BB2A1C200FF3AC00556F91 /* Assets.xcassets */; };
 		B3BB2A20200FF3AC00556F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BB2A1E200FF3AC00556F91 /* LaunchScreen.storyboard */; };
 		B3BB2A282010E4A900556F91 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2A272010E4A900556F91 /* Pulsing.swift */; };
+		B3F625B0201A5B84008888A6 /* UserDefaultHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625AF201A5B84008888A6 /* UserDefaultHelp.swift */; };
+		B3F625B2201A5D1E008888A6 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625B1201A5D1E008888A6 /* TransitionAnimation.swift */; };
+		B3F625B4201A6933008888A6 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625B3201A6933008888A6 /* Cards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B3BB2A1F200FF3AC00556F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3BB2A21200FF3AC00556F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3BB2A272010E4A900556F91 /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
+		B3F625AF201A5B84008888A6 /* UserDefaultHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelp.swift; sourceTree = "<group>"; };
+		B3F625B1201A5D1E008888A6 /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
+		B3F625B3201A6933008888A6 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				B3BB2A1C200FF3AC00556F91 /* Assets.xcassets */,
 				B3BB2A1E200FF3AC00556F91 /* LaunchScreen.storyboard */,
 				B3BB2A21200FF3AC00556F91 /* Info.plist */,
+				B3F625AF201A5B84008888A6 /* UserDefaultHelp.swift */,
+				B3F625B1201A5D1E008888A6 /* TransitionAnimation.swift */,
+				B3F625B3201A6933008888A6 /* Cards.swift */,
 			);
 			path = RNGTest;
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F625B2201A5D1E008888A6 /* TransitionAnimation.swift in Sources */,
 				B3BB2A18200FF3AC00556F91 /* ViewController.swift in Sources */,
+				B3F625B0201A5B84008888A6 /* UserDefaultHelp.swift in Sources */,
+				B3F625B4201A6933008888A6 /* Cards.swift in Sources */,
 				B3BB2A282010E4A900556F91 /* Pulsing.swift in Sources */,
 				B3BB2A16200FF3AC00556F91 /* AppDelegate.swift in Sources */,
 			);

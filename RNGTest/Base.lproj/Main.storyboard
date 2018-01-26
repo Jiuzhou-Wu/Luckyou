@@ -54,28 +54,49 @@
                                     <constraint firstAttribute="width" secondItem="0PP-8F-5wi" secondAttribute="height" multiplier="248:520" id="xtn-K9-eJa"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Pick Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-Xq-pa6">
+                                <rect key="frame" x="66" y="14" width="244" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-Y0-Ybn">
+                                <rect key="frame" x="289" y="11" width="75" height="26.5"/>
+                                <state key="normal" title="Owned" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Mg-8n-OTq"/>
                             <constraint firstItem="Zte-9y-awf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.95" id="64I-J9-LCn"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="9IU-sy-YXy"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="289" id="AmB-iM-o54"/>
                             <constraint firstItem="0PP-8F-5wi" firstAttribute="centerX" secondItem="VD3-Gs-LyX" secondAttribute="centerX" id="E4g-ka-Xqh"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VD3-Gs-LyX" secondAttribute="trailing" multiplier="0.97" id="Gb0-MM-vuB"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="height" secondItem="VD3-Gs-LyX" secondAttribute="height" multiplier="0.04" id="Jfb-5K-VJY"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="leading" secondItem="Zte-9y-awf" secondAttribute="trailing" id="KRf-Rd-62I"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="width" secondItem="Zte-9y-awf" secondAttribute="width" id="LS2-4W-AQo"/>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Mzg-vq-Is5"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="width" secondItem="VD3-Gs-LyX" secondAttribute="width" multiplier="0.2" id="PSh-pz-QER"/>
+                            <constraint firstItem="bXM-Xq-pa6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMD-u0-pDt"/>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="d6T-fu-0VU"/>
                             <constraint firstItem="0PP-8F-5wi" firstAttribute="height" secondItem="VD3-Gs-LyX" secondAttribute="height" multiplier="0.75" id="flI-L0-487"/>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hBV-Wd-QhK"/>
                             <constraint firstItem="0PP-8F-5wi" firstAttribute="bottom" secondItem="Zte-9y-awf" secondAttribute="top" multiplier="0.95" id="lZa-L2-rSx"/>
+                            <constraint firstItem="bXM-Xq-pa6" firstAttribute="width" secondItem="VD3-Gs-LyX" secondAttribute="width" multiplier="0.65" id="pgr-Tl-5e9"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.95" id="sEQ-hz-njM"/>
                             <constraint firstItem="Zte-9y-awf" firstAttribute="height" secondItem="pOr-w7-GiA" secondAttribute="height" id="tB1-6B-hVk"/>
+                            <constraint firstItem="bXM-Xq-pa6" firstAttribute="bottom" secondItem="0PP-8F-5wi" secondAttribute="top" multiplier="0.9" id="ufy-Tw-sRj"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="vEM-EB-CpE"/>
                             <constraint firstItem="Zte-9y-awf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wM1-ZY-F6N"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="centerY" secondItem="bXM-Xq-pa6" secondAttribute="centerY" id="yJY-cz-WAE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Count" destination="bXM-Xq-pa6" id="UEx-Q8-g28"/>
                         <outlet property="card" destination="0PP-8F-5wi" id="zzc-29-d0j"/>
                         <outlet property="onePick" destination="Zte-9y-awf" id="GM2-7M-S24"/>
                         <outlet property="tenPick" destination="pOr-w7-GiA" id="F6M-tj-zcQ"/>
