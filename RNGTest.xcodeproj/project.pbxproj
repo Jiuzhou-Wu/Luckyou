@@ -16,6 +16,8 @@
 		B3F625B0201A5B84008888A6 /* UserDefaultHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625AF201A5B84008888A6 /* UserDefaultHelp.swift */; };
 		B3F625B2201A5D1E008888A6 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625B1201A5D1E008888A6 /* TransitionAnimation.swift */; };
 		B3F625B4201A6933008888A6 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625B3201A6933008888A6 /* Cards.swift */; };
+		B3F625B6201B8F06008888A6 /* ScaleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625B5201B8F06008888A6 /* ScaleSegue.swift */; };
+		B3F625B8201BB311008888A6 /* tenPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F625B7201BB311008888A6 /* tenPickViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B3F625AF201A5B84008888A6 /* UserDefaultHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelp.swift; sourceTree = "<group>"; };
 		B3F625B1201A5D1E008888A6 /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
 		B3F625B3201A6933008888A6 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		B3F625B5201B8F06008888A6 /* ScaleSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSegue.swift; sourceTree = "<group>"; };
+		B3F625B7201BB311008888A6 /* tenPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenPickViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				B3F625AF201A5B84008888A6 /* UserDefaultHelp.swift */,
 				B3F625B1201A5D1E008888A6 /* TransitionAnimation.swift */,
 				B3F625B3201A6933008888A6 /* Cards.swift */,
+				B3F625B5201B8F06008888A6 /* ScaleSegue.swift */,
+				B3F625B7201BB311008888A6 /* tenPickViewController.swift */,
 			);
 			path = RNGTest;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 			files = (
 				B3F625B2201A5D1E008888A6 /* TransitionAnimation.swift in Sources */,
 				B3BB2A18200FF3AC00556F91 /* ViewController.swift in Sources */,
+				B3F625B6201B8F06008888A6 /* ScaleSegue.swift in Sources */,
+				B3F625B8201BB311008888A6 /* tenPickViewController.swift in Sources */,
 				B3F625B0201A5B84008888A6 /* UserDefaultHelp.swift in Sources */,
 				B3F625B4201A6933008888A6 /* Cards.swift in Sources */,
 				B3BB2A282010E4A900556F91 /* Pulsing.swift in Sources */,

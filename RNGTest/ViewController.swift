@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     let trans = TransitionAnimation.init()
     let cardPool = Cards.init()
     var isOpen = false
+    var cards = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
         
         onePick.isEnabled = true
         tenPick.isEnabled = true
-        trans.autoRotate(card: self.card)
+        trans.autoRotate(card: self.card, view: self)
         
         onePick.layer.cornerRadius = 20
         onePick.layer.borderWidth = 4
@@ -70,20 +71,20 @@ class ViewController: UIViewController {
         let cardPic = self.cardPool.numToCard(id: cardId[0])
         
         //rotate
-        self.trans.flipingCard(view: self, card: self.card, cardfront: cardPic)
+        self.trans.flipingCard(view: self, card: self.card, cardfront: cardPic, onePick: self.onePick, tenPick: self.tenPick)
         if(UserDefaults.standard.cardOwned(targetCard: cardPic)){
         } else {
             UserDefaults.standard.addOwnedCard(card: cardPic)
         }
         
-        onePick.isEnabled = true
-        tenPick.isEnabled = true
         Count.text = UserDefaults.standard.getTotalPicks()
     }
     
     
     @IBAction func tenRoundsPick(_ sender: Any) {
         UserDefaults.standard.tenPick()
+        onePick.isEnabled = false
+        tenPick.isEnabled = false
         //pulsing
         let pulse = Pulsing(numberOfPulses: 1, radius: 110, position: tenPick.center)
         pulse.animationDuration = 0.8
@@ -91,6 +92,26 @@ class ViewController: UIViewController {
         self.view.layer.insertSublayer(pulse, below: tenPick.layer)
         
         //pickcard
+        let cardIds = self.randomGenerator(size: 10)
+        var counter = 0
+        for cardId in cardIds {
+            let cardPic: String
+            if(counter == 9){
+                cardPic = self.cardPool.safeNumToCard(id: cardId)
+                cards.append(cardPic)
+            }else{
+                cardPic = self.cardPool.numToCard(id: cardId)
+                cards.append(cardPic)
+            }
+            if(UserDefaults.standard.cardOwned(targetCard: cardPic)){
+            } else {
+                UserDefaults.standard.addOwnedCard(card: cardPic)
+            }
+            counter = counter + 1
+        }
+        self.trans.speedUpRotation(card: self.card, view: self, onePick: self.onePick, tenPick: self.tenPick)
+        
+        self.performSegue(withIdentifier: "tenPickView", sender: self)
         
         //rotate
         Count.text = UserDefaults.standard.getTotalPicks()
@@ -108,5 +129,17 @@ class ViewController: UIViewController {
         return random
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tenpickView: tenPickViewController = segue.destination as! tenPickViewController
+        tenpickView.cardsId = cards
+    }
+    
+    @IBAction func prepareForUnwind (segue: UIStoryboardSegue) {
+    }
+    
+    override func unwind(for unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        let segue = UnwindScaleSugue(identifier: unwindSegue.identifier, source: unwindSegue.source, destination: unwindSegue.destination)
+        segue.perform()
+    }
 }
 

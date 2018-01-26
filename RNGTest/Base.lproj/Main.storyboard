@@ -49,42 +49,42 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-back" translatesAutoresizingMaskIntoConstraints="NO" id="0PP-8F-5wi">
-                                <rect key="frame" x="68" y="38.5" width="239" height="501"/>
+                                <rect key="frame" x="68" y="49.5" width="239" height="501"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0PP-8F-5wi" secondAttribute="height" multiplier="248:520" id="xtn-K9-eJa"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Pick Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-Xq-pa6">
-                                <rect key="frame" x="66" y="14" width="244" height="20.5"/>
+                                <rect key="frame" x="66" y="24" width="244" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-Y0-Ybn">
-                                <rect key="frame" x="289" y="11" width="75" height="26.5"/>
+                                <rect key="frame" x="281.5" y="21" width="75" height="26.5"/>
                                 <state key="normal" title="Owned" backgroundImage="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Home"/>
                         <constraints>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Mg-8n-OTq"/>
                             <constraint firstItem="Zte-9y-awf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.95" id="64I-J9-LCn"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="9IU-sy-YXy"/>
-                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="289" id="AmB-iM-o54"/>
                             <constraint firstItem="0PP-8F-5wi" firstAttribute="centerX" secondItem="VD3-Gs-LyX" secondAttribute="centerX" id="E4g-ka-Xqh"/>
-                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VD3-Gs-LyX" secondAttribute="trailing" multiplier="0.97" id="Gb0-MM-vuB"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VD3-Gs-LyX" secondAttribute="trailing" multiplier="0.95" id="Gb0-MM-vuB"/>
                             <constraint firstItem="Wea-Y0-Ybn" firstAttribute="height" secondItem="VD3-Gs-LyX" secondAttribute="height" multiplier="0.04" id="Jfb-5K-VJY"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="leading" secondItem="Zte-9y-awf" secondAttribute="trailing" id="KRf-Rd-62I"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="width" secondItem="Zte-9y-awf" secondAttribute="width" id="LS2-4W-AQo"/>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Mzg-vq-Is5"/>
                             <constraint firstItem="Wea-Y0-Ybn" firstAttribute="width" secondItem="VD3-Gs-LyX" secondAttribute="width" multiplier="0.2" id="PSh-pz-QER"/>
                             <constraint firstItem="bXM-Xq-pa6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMD-u0-pDt"/>
+                            <constraint firstItem="0PP-8F-5wi" firstAttribute="centerY" secondItem="VD3-Gs-LyX" secondAttribute="centerY" multiplier="0.9" id="aIZ-nX-4U6"/>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="d6T-fu-0VU"/>
                             <constraint firstItem="0PP-8F-5wi" firstAttribute="height" secondItem="VD3-Gs-LyX" secondAttribute="height" multiplier="0.75" id="flI-L0-487"/>
                             <constraint firstItem="VD3-Gs-LyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hBV-Wd-QhK"/>
-                            <constraint firstItem="0PP-8F-5wi" firstAttribute="bottom" secondItem="Zte-9y-awf" secondAttribute="top" multiplier="0.95" id="lZa-L2-rSx"/>
                             <constraint firstItem="bXM-Xq-pa6" firstAttribute="width" secondItem="VD3-Gs-LyX" secondAttribute="width" multiplier="0.65" id="pgr-Tl-5e9"/>
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.95" id="sEQ-hz-njM"/>
                             <constraint firstItem="Zte-9y-awf" firstAttribute="height" secondItem="pOr-w7-GiA" secondAttribute="height" id="tB1-6B-hVk"/>
@@ -92,6 +92,7 @@
                             <constraint firstItem="pOr-w7-GiA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="vEM-EB-CpE"/>
                             <constraint firstItem="Zte-9y-awf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wM1-ZY-F6N"/>
                             <constraint firstItem="Wea-Y0-Ybn" firstAttribute="centerY" secondItem="bXM-Xq-pa6" secondAttribute="centerY" id="yJY-cz-WAE"/>
+                            <constraint firstItem="Wea-Y0-Ybn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="281.5" id="z9T-nw-wwm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -100,11 +101,65 @@
                         <outlet property="card" destination="0PP-8F-5wi" id="zzc-29-d0j"/>
                         <outlet property="onePick" destination="Zte-9y-awf" id="GM2-7M-S24"/>
                         <outlet property="tenPick" destination="pOr-w7-GiA" id="F6M-tj-zcQ"/>
+                        <segue destination="2rz-xq-qDB" kind="custom" identifier="tenPickView" customClass="ScaleSegue" customModule="RNGTest" customModuleProvider="target" id="nkc-pU-maL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Ten Pick View Controller-->
+        <scene sceneID="SuS-Us-Et1">
+            <objects>
+                <viewController id="2rz-xq-qDB" customClass="tenPickViewController" customModule="RNGTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sha-JT-baM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-Oa-NZg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-aK-DYe">
+                                <rect key="frame" x="20.5" y="17" width="334" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ibb-aK-DYe" secondAttribute="height" multiplier="350:524" id="UPk-Z6-o9w"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCo-HO-nyU">
+                                <rect key="frame" x="113" y="600.5" width="150" height="66.5"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="27"/>
+                                <state key="normal" title="返回" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gHe-x5-bKJ" kind="unwind" identifier="" customClass="UnwindScaleSugue" customModule="RNGTest" customModuleProvider="target" unwindAction="prepareForUnwindWithSegue:" id="oiz-cH-zfe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ibb-aK-DYe" firstAttribute="centerX" secondItem="Sha-JT-baM" secondAttribute="centerX" id="08N-0S-tpr"/>
+                            <constraint firstItem="g5C-Oa-NZg" firstAttribute="height" secondItem="Sha-JT-baM" secondAttribute="height" id="4Wp-Hp-HJC"/>
+                            <constraint firstItem="ibb-aK-DYe" firstAttribute="centerY" secondItem="g5C-Oa-NZg" secondAttribute="centerY" multiplier="0.8" id="7js-RI-T7b"/>
+                            <constraint firstItem="VCo-HO-nyU" firstAttribute="height" secondItem="g5C-Oa-NZg" secondAttribute="height" multiplier="0.1" id="8X4-84-QPh"/>
+                            <constraint firstItem="ibb-aK-DYe" firstAttribute="height" secondItem="Sha-JT-baM" secondAttribute="height" multiplier="0.75" id="AFm-IP-7bN"/>
+                            <constraint firstItem="g5C-Oa-NZg" firstAttribute="centerY" secondItem="Sha-JT-baM" secondAttribute="centerY" id="b77-RB-UCM"/>
+                            <constraint firstItem="g5C-Oa-NZg" firstAttribute="width" secondItem="Sha-JT-baM" secondAttribute="width" id="bRC-Bt-GLV"/>
+                            <constraint firstItem="g5C-Oa-NZg" firstAttribute="centerX" secondItem="Sha-JT-baM" secondAttribute="centerX" id="dII-LW-EoS"/>
+                            <constraint firstItem="VCo-HO-nyU" firstAttribute="bottom" secondItem="g5C-Oa-NZg" secondAttribute="bottom" id="gez-T7-5rn"/>
+                            <constraint firstItem="VCo-HO-nyU" firstAttribute="centerX" secondItem="g5C-Oa-NZg" secondAttribute="centerX" id="lM8-iy-uUv"/>
+                            <constraint firstItem="VCo-HO-nyU" firstAttribute="width" secondItem="g5C-Oa-NZg" secondAttribute="width" multiplier="0.4" id="ufR-dR-KCg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o8V-f7-zfP"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardsScrollView" destination="ibb-aK-DYe" id="KEk-as-OPo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27b-W2-50t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gHe-x5-bKJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

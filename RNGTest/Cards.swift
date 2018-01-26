@@ -9,8 +9,130 @@
 import Foundation
 
 class Cards {
-    func numToCard(id: Int) -> String {
+    func safeNumToCard(id: Int) -> String {
         //assign card to each id
+        switch id {
+        case 0...9:
+            return "11-1"
+        case 10...59:
+            return "10-21"
+        case 60...99:
+            return "10-22"
+        case 100...149:
+            return "10-1"
+        case 150...199:
+            return "10-2"
+        case 200...209:
+            return "10-22"
+        case 210...999:
+            return "10-1"
+            
+        case 1000...1009:
+            return "11-2"
+        case 1010...1099:
+            return "10-2"
+        case 1100...1149:
+            return "10-3"
+        case 1150...1199:
+            return "10-4"
+        case 1200...1999:
+            return "10-3"
+            
+        case 2000...2009:
+            return "11-3"
+        case 2010...2099:
+            return "10-4"
+        case 2100...2149:
+            return "10-5"
+        case 2150...2199:
+            return "10-6"
+        case 2200...2999:
+            return "10-5"
+            
+        case 3000...3009:
+            return "11-4"
+        case 3010...3099:
+            return "10-6"
+        case 3100...3149:
+            return "10-7"
+        case 3150...3199:
+            return "10-8"
+        case 3200...3999:
+            return "10-7"
+            
+        case 4000...4009:
+            return "11-5"
+        case 4010...4099:
+            return "10-8"
+        case 4100...4149:
+            return "10-9"
+        case 4150...4199:
+            return "10-10"
+        case 4200...4999:
+            return "10-9"
+            
+        case 5000...5009:
+            return "11-6"
+        case 5010...5099:
+            return "10-10"
+        case 5100...5149:
+            return "10-11"
+        case 5150...5199:
+            return "10-12"
+        case 5200...5999:
+            return "10-11"
+            
+        case 6000...6009:
+            return "11-7"
+        case 6010...6099:
+            return "10-12"
+        case 6100...6149:
+            return "10-13"
+        case 6150...6199:
+            return "10-14"
+        case 6200...6999:
+            return "10-13"
+            
+        case 7000...7009:
+            return "11-8"
+        case 7010...7099:
+            return "10-14"
+        case 7100...7149:
+            return "10-15"
+        case 7150...7199:
+            return "10-16"
+        case 7200...7999:
+            return "10-15"
+            
+            
+        case 8000...8009:
+            return "11-9"
+        case 8010...8099:
+            return "10-16"
+        case 8100...8149:
+            return "10-17"
+        case 8150...8199:
+            return "10-18"
+        case 8200...8999:
+            return "10-17"
+            
+        case 9000...9009:
+            return "11-10"
+        case 9010...9099:
+            return "10-18"
+        case 9100...9149:
+            return "10-19"
+        case 9150...9199:
+            return "10-20"
+        case 9200...9999:
+            return "10-19"
+            
+        default:
+            return "10-20"
+        }
+    }
+    
+    func numToCard(id: Int) -> String {
         switch id {
         case 0...9:
             return "11-1"
