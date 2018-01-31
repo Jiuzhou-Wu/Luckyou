@@ -119,14 +119,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-Oa-NZg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-aK-DYe">
-                                <rect key="frame" x="20.5" y="17" width="334" height="500"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-aK-DYe">
+                                <rect key="frame" x="68.5" y="50" width="238" height="500"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ibb-aK-DYe" secondAttribute="height" multiplier="350:524" id="UPk-Z6-o9w"/>
+                                    <constraint firstAttribute="width" secondItem="ibb-aK-DYe" secondAttribute="height" multiplier="248:520" id="UPk-Z6-o9w"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCo-HO-nyU">
-                                <rect key="frame" x="113" y="600.5" width="150" height="66.5"/>
+                                <rect key="frame" x="113" y="567" width="150" height="66.5"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="27"/>
                                 <state key="normal" title="返回" backgroundImage="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -140,13 +140,13 @@
                         <constraints>
                             <constraint firstItem="ibb-aK-DYe" firstAttribute="centerX" secondItem="Sha-JT-baM" secondAttribute="centerX" id="08N-0S-tpr"/>
                             <constraint firstItem="g5C-Oa-NZg" firstAttribute="height" secondItem="Sha-JT-baM" secondAttribute="height" id="4Wp-Hp-HJC"/>
-                            <constraint firstItem="ibb-aK-DYe" firstAttribute="centerY" secondItem="g5C-Oa-NZg" secondAttribute="centerY" multiplier="0.8" id="7js-RI-T7b"/>
+                            <constraint firstItem="ibb-aK-DYe" firstAttribute="centerY" secondItem="g5C-Oa-NZg" secondAttribute="centerY" multiplier="0.9" id="7js-RI-T7b"/>
                             <constraint firstItem="VCo-HO-nyU" firstAttribute="height" secondItem="g5C-Oa-NZg" secondAttribute="height" multiplier="0.1" id="8X4-84-QPh"/>
                             <constraint firstItem="ibb-aK-DYe" firstAttribute="height" secondItem="Sha-JT-baM" secondAttribute="height" multiplier="0.75" id="AFm-IP-7bN"/>
                             <constraint firstItem="g5C-Oa-NZg" firstAttribute="centerY" secondItem="Sha-JT-baM" secondAttribute="centerY" id="b77-RB-UCM"/>
                             <constraint firstItem="g5C-Oa-NZg" firstAttribute="width" secondItem="Sha-JT-baM" secondAttribute="width" id="bRC-Bt-GLV"/>
                             <constraint firstItem="g5C-Oa-NZg" firstAttribute="centerX" secondItem="Sha-JT-baM" secondAttribute="centerX" id="dII-LW-EoS"/>
-                            <constraint firstItem="VCo-HO-nyU" firstAttribute="bottom" secondItem="g5C-Oa-NZg" secondAttribute="bottom" id="gez-T7-5rn"/>
+                            <constraint firstItem="VCo-HO-nyU" firstAttribute="bottom" secondItem="g5C-Oa-NZg" secondAttribute="bottom" multiplier="0.95" id="gez-T7-5rn"/>
                             <constraint firstItem="VCo-HO-nyU" firstAttribute="centerX" secondItem="g5C-Oa-NZg" secondAttribute="centerX" id="lM8-iy-uUv"/>
                             <constraint firstItem="VCo-HO-nyU" firstAttribute="width" secondItem="g5C-Oa-NZg" secondAttribute="width" multiplier="0.4" id="ufR-dR-KCg"/>
                         </constraints>

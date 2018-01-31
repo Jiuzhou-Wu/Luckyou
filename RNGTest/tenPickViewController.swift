@@ -11,32 +11,31 @@ import UIKit
 class tenPickViewController: UIViewController {
 
     @IBOutlet weak var cardsScrollView: UIScrollView!
-    
-    var cards = [UIImage]()
+
     var cardsId = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         cardsScrollView.frame = view.frame
-        
-        for id in cardsId {
-            cards.append(UIImage(named: id)!)
-        }
-        for i in 0 ..< cards.count {
-            let cardView = UIImageView()
-            cardView.image = cards[i]
-            cardView.contentMode = .scaleToFill
-            let xPosition = self.view.frame.width * CGFloat(i)
-            cardView.frame = CGRect(x: xPosition, y: 0, width: cardsScrollView.frame.width, height: cardsScrollView.frame.height)
-            cardsScrollView.contentSize.width = cardsScrollView.frame.width * CGFloat(i + 2)
-            cardsScrollView.addSubview(cardView)
+
+        for i in 0..<cardsId.count{
+            let x = (self.view.frame.size.height * 0.75 * 248/520) * CGFloat(i)
+            let imageView = UIImageView(frame: CGRect(x: x, y: 0, width: (self.view.frame.size.height * 0.75 * 248/520), height: self.view.frame.size.height * 0.75))
+            imageView.image = UIImage(named: cardsId[i])
+            cardsScrollView.contentSize.width = (self.view.frame.size.height * 0.75 * 248/520) * CGFloat(i+1)
+            cardsScrollView.addSubview(imageView)
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let mainViewController: ViewController = segue.destination as! ViewController
+        mainViewController.onePick.isEnabled = true
+        mainViewController.tenPick.isEnabled = true
     }
 
 }
